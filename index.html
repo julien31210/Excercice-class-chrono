@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="UTF-8">
 	<title>Chrono</title>
 </head>
 <body>
-	<div>
-		<span id="H">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="mlsec">000</span>
-			<p><button onclick="chronoStart()">Start</button></p>
-			<p><button onclick="chronoStop()">Stop</button></p>
-			<p><button onclick="chronoReset()">Reset</button></p>
-	<script type="text/javascript" src="app.js"></script>
+	<div id="panneau">
+		<span id="H">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+			<p><button id="start">Start</button>
+			<button id="stop">Stop</button>
+			<button id="reset">Reset</button></p>
 	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!--:<span id="mlsec">000</span>-->

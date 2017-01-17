@@ -1,0 +1,18 @@
+body{
+	background-color: purple;
+}
+
+
+#panneau {
+	background-color: black;
+	height:135px;
+	width:535px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 182.5px;
+	border-radius: 10px;
+	font-family: Chrono;
+	color: blue;
+	font-size: 100px;
+	text-align: center;
+}
