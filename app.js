@@ -1,7 +1,7 @@
-var timer = 0;
-var counter = 0;
+var sec = 0;
 $("#start").click(function(){
-	currentTime:0;
-	console.log(counter);
-
+	inter = setInterval(function(){
+		sec++
+		console.log(sec);
+	}, 1000)
 });
