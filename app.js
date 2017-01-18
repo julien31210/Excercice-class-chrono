@@ -2,8 +2,9 @@ var sec = 0;
 var min = 0;
 var h = 0;
 var inter;
+var stop = true;
 $("#start").click(function(){
-	console.log(inter+"1");
+	console.log(inter+"1er");
 	if (inter!="1") {
 		inter = setInterval(function(){
 			sec++
@@ -26,5 +27,15 @@ $("#start").click(function(){
 	}, 1000)
 	}
 
+	$("#stop").click(function(){
+		$("#stop").html(); 
+		console.log("ça marche");
+		clearInterval(inter);
+		inter=undefined;
+		console.log(inter);
+	});
 
 });
+
+
+
