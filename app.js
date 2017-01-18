@@ -40,6 +40,7 @@ $("#start").click(function(){
 		$("#reset").html();
 		console.log("ça marche aussi");
 		clearInterval(inter);
+		inter=undefined;
 			sec=0;
 			min=0;
 			h=0;
