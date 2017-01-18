@@ -1,11 +1,14 @@
 var sec = 0;
 var min = 0;
 var h = 0;
+var inter;
 $("#start").click(function(){
-	inter = setInterval(function(){
-		sec++
-		$("#sec").html(sec);
-		console.log(sec);
+	console.log(inter+"1");
+	if (inter!="1") {
+		inter = setInterval(function(){
+			sec++
+			$("#sec").html(sec);
+		//console.log(sec);
 		
 		if (sec==60) {
 			min++;
@@ -18,10 +21,10 @@ $("#start").click(function(){
 			h++;
 			min=0;
 		}
-
 		$("#min").html(min);
 		$("#h").html(h);
 	}, 1000)
+	}
 
 
 });
