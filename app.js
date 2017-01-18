@@ -3,6 +3,7 @@ var min = 0;
 var h = 0;
 var inter;
 var stop = true;
+var reset = true;
 $("#start").click(function(){
 	console.log(inter+"1er");
 	if (inter!="1") {
@@ -35,6 +36,17 @@ $("#start").click(function(){
 		console.log(inter);
 	});
 
+	$("#reset").click(function(){
+		$("#reset").html();
+		console.log("ça marche aussi");
+		clearInterval(inter);
+			sec=0;
+			min=0;
+			h=0;
+			$("#sec").html(sec);
+			$("#min").html(min);
+			$("#h").html(h);
+	})
 });
 
 
